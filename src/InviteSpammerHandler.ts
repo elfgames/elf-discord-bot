@@ -2,7 +2,7 @@ import { Message } from 'discord.js';
 import { IMessageHandler } from './IMessageHandler';
 
 export default class InviteSpammerHandler implements IMessageHandler {
-  spammers: { [key: string]: number }
+  spammers: { [key: string]: number } = {};
 
   canHandle(message: Message) {
     return message.content.indexOf('//discord.gg/') !== -1 && !message.member.hasPermission('MANAGE_CHANNELS');
