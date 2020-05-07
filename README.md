@@ -29,3 +29,10 @@ And finally run:
 ```bash
 yarn start
 ```
+
+### Credits
+
+Made with <3 by @ProGM at @ElfGames for our Discord channel.
+
+Join us and discover our games!
+https://discord.com/invite/elfgames
