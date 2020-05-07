@@ -13,7 +13,7 @@ const messageHandlers: IMessageHandler[] = [
 ];
 
 client.on('message', async (message) => {
-  const handler = messageHandlers.find(handler => handler.canHandle(message));
+  const handler = messageHandlers.find((h) => h.canHandle(message));
   if (handler) {
     await handler.handle(message);
   }
